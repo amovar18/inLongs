@@ -35,9 +35,9 @@ export default class Readsingle extends React.Component{
                     <MDBCard border='dark' background='transparent' style={{ maxWidth: '22rem' }}>
                             <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                                 <MDBCardImage border='dark' background='transparent' src={'https://static01.nyt.com/'+this.state.news.multimedia[8].url} position='top' alt='...' />
-                                <a href='#'>
+                                <span>
                                     <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                                </a>
+                                </span>
                             </MDBRipple>
                             <MDBCardBody border='dark' background='transparent'>
                                 <MDBCardTitle style={{'text-align':'justify','text-color':'#ffffff'}} >{this.props.match.params.name} </MDBCardTitle>
