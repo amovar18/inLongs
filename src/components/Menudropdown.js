@@ -9,7 +9,7 @@ export default class Homepage extends React.Component{
     render(){
         return(
         <MDBDropdown>
-            <MDBDropdownToggle>Categories</MDBDropdownToggle>
+            <MDBDropdownToggle style={{'backgroundColor':'#2F2FA2'}}>Categories</MDBDropdownToggle>
                 <MDBDropdownMenu>
                 {links.map(({title,path})=>{
                     return(

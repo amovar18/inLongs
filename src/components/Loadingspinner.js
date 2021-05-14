@@ -6,8 +6,8 @@ export default function Loadingspinner() {
         <div style={{'height':'100vh'}}className="border d-flex align-items-center justify-content-center">
             <MDBBtn disabled>
               <MDBSpinner size='sm' role='status' tag='span' className='me-2' />
-              Loading...
-            </MDBBtn>
+                Loading...
+              </MDBBtn>
         </div>
   );
 }

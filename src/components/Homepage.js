@@ -27,6 +27,7 @@ export default class Homepage extends React.Component{
         });
     }
     render(){
+        console.log(this.state.news)
         if(this.state.error===true){
             return(
                 <div style={{'height':'100vh'}}className="border d-flex align-items-center justify-content-center">

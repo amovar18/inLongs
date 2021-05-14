@@ -24,7 +24,7 @@ export default class header extends React.Component{
     }
     render(){
         return(
-            <MDBNavbar expand='lg'  dark bgColor='primary'>
+            <MDBNavbar expand='lg'  dark style={{'backgroundColor':'#2F2FA2'}}>
                 <MDBContainer fluid>
                     <MDBNavbarBrand href='/'>InLongs</MDBNavbarBrand>
                     <MDBNavbarToggler

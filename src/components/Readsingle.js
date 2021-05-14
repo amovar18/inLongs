@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, MDBRipple } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardBody, MDBRipple, MDBCardText, MDBCardImage, MDBBtn, MDBCardTitle } from 'mdb-react-ui-kit';
 import Loadingspinner from './Loadingspinner';
 import { Redirect } from 'react-router';
 
@@ -27,25 +27,23 @@ export default class Readsingle extends React.Component{
         });
     }
     render(){
-        console.log(this.state);
         if (this.state.news.length!==0){
             return(
-                <center style={{'height':'100vh'}}>
+                <center>
                     <br/>
-                    <MDBCard border='dark' background='transparent' style={{ maxWidth: '22rem' }}>
-                            <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                                <MDBCardImage border='dark' background='transparent' src={'https://static01.nyt.com/'+this.state.news.multimedia[8].url} position='top' alt='...' />
-                                <span>
-                                    <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                                </span>
-                            </MDBRipple>
-                            <MDBCardBody border='dark' background='transparent'>
-                                <MDBCardTitle style={{'text-align':'justify','text-color':'#ffffff'}} >{this.props.match.params.name} </MDBCardTitle>
-                                <br/>
-                                <MDBCardText style={{'text-align':'justify'}}>
-                                <small>{this.state.news.abstract} </small>
-                                </MDBCardText>
-                            <MDBBtn href={this.state.news.web_url}>Read more on NYT</MDBBtn>
+                    <MDBCard shadow='0' border='dark' background='transparent' style={{ maxWidth: '22rem' }}>
+                        <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
+                            <MDBCardImage position='top' src={'https://static01.nyt.com/'+this.state.news.multimedia[0].url} alt='...' />                            
+                            <span>
+                                <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
+                            </span>
+                        </MDBRipple>
+                        <MDBCardBody>
+                            <MDBCardTitle style={{'color': '#242582'}}>{this.props.match.params.name}</MDBCardTitle>
+                            <MDBCardText style={{'textAlign':'justify'}}>
+                                <small>{this.state.news.lead_paragraph} </small>
+                            </MDBCardText>
+                            <MDBBtn href={this.state.news.url}>Read more</MDBBtn>
                         </MDBCardBody>
                     </MDBCard>
                 </center>
