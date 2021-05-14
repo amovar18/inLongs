@@ -52,7 +52,7 @@ export default class Readsingle extends React.Component{
             );
         }else if(this.state.iserror===true){
             return(
-            <div style={{'height':'100vh'}}className="border d-flex align-items-center justify-content-center">
+            <div className="border d-flex align-items-center justify-content-center">
                     <h1>Some error occured please reload the page Redirecting to Homepage</h1>{setTimeout(() => {
                         <Redirect to='/'/>
                     }, 1500)}

@@ -38,7 +38,7 @@ export default class Homepage extends React.Component{
         }else if(this.state.fetched===true){
             return(
                 <div>
-                    <center style={{'height':'100vh'}}>
+                    <center>
                         <br/>
                         {this.state.news.length !== 0 ? this.state.news.map((news_single,idx)=>{
                             return(<Singlenewscard key={idx} data={news_single}/>);
