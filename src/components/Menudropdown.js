@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem, MDBDropdownLink } from 'mdb-react-ui-kit';
 const links=[
-    {title:'Automobiles',path:'/automobiles'},{title:'Business',path:'/business'},{title:'Movies',path:'/movies'},{title:'Art',path:'/art'},
+    {title:'Automobiles',path:'/automobiles'},{title:'Business',path:'/business'},{title:'Movies',path:'/movies'},{title:'Art',path:'/arts'},
     {title:'Health',path:'/health'},{title:'Sports',path:'/sports'},{title:'Technology',path:'/technology'}
     ,{title:'Politics', path:'/politics'},{title:'Science', path:'/science'},{title:'World', path:'/world'}
 ]

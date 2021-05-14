@@ -13,7 +13,7 @@ export default class single_news_card extends React.Component{
                         </span>
                     </MDBRipple>
                     <MDBCardBody>
-                        <MDBCardTitle><MDBNavbarLink style={{'color': '#242582'}} href={'/read/'+this.props.data.title}>{this.props.data.title}</MDBNavbarLink></MDBCardTitle>
+                        <MDBCardTitle><MDBNavbarLink style={{'color': '#242582','textAlign':'justify'}} href={'/read/'+this.props.data.title}>{this.props.data.title}</MDBNavbarLink></MDBCardTitle>
                         <MDBCardText style={{'textAlign':'justify'}}>
                             <small>{this.props.data.abstract} </small>
                         </MDBCardText>

@@ -39,7 +39,7 @@ export default class Readsingle extends React.Component{
                             </span>
                         </MDBRipple>
                         <MDBCardBody>
-                            <MDBCardTitle style={{'color': '#242582'}}>{this.props.match.params.name}</MDBCardTitle>
+                            <MDBCardTitle style={{'color': '#242582','textAlign':'justify'}}>{this.props.match.params.name}</MDBCardTitle>
                             <MDBCardText style={{'textAlign':'justify'}}>
                                 <small>{this.state.news.lead_paragraph} </small>
                             </MDBCardText>
